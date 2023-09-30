@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -R --reference=vincent:group *
+chown -R vincent:group *
