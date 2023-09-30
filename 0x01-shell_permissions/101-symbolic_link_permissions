@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo shown reference=_hello vincent:staff _hello
+sudo shown -L --reference=_hello vincent:staff _hello
