@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# A Bash script that displays Best School 10 times using while loop.
+
+# Define the word to be displayed
+word="Best School"
+
+# Using while loopto display the word
+while [ "$i" -lt 10 ]; do
+
+	# Display the words
+	echo "$word"
+
+	# Incrememnt counter
+	((i++))
+done
