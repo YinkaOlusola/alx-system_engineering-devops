@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# A bash script that displays BEst School times using until
+
+# Define counter
+counter=0
+
+# The word to display
+word="Best School"
+
+# The loop
+until [ "$counter" -eq 10 ]
+do
+	# Display Best School
+	echo "$word"
+
+	# Increment counter
+	(( counter++ ))
+done
