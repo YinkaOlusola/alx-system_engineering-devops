@@ -6,7 +6,7 @@
 # Initialize hour
 hour=0
 
-while [ "$hour" -le 12 ]; do
+while [ "$hour" -le 12 ] do
 	# Display hour
 	echo "Hour $hour"
 
@@ -14,7 +14,7 @@ while [ "$hour" -le 12 ]; do
 	minute=1
 
 	# Loop for minute
-	while [ "$minute" -le 60 ]; do
+	while [ "$minute" -le 59 ] do
 		# Display minute
 		echo "$minute"
 
