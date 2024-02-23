@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# A Bash script that displays numbers from 1 to 20 and:
+
+#+ displays 4 and then bad luck from China for the 4th loop iteration
+#+ displays 9 and then bad luck from Japan for the 9th loop iteration
+#+ displays 17 and then bad luck from Italy for the 17th loop iteration
+
+# Initialize counter
+counter=1
+
+# Texts
+text_1="bad luck from China"
+text_2="bad luck from Japan"
+text_3="bad luck from Italy"
+
+# The loop
+while [ "$counter" -le 20 ]; do
+	# Display number
+	echo "$counter"
+
+	# Case
+	case "$counter" in
+
+		# Check condition 1
+		4)
+		echo "$text_1"
+		;;
+
+		# Check condition 2
+		9)
+		echo "$text_2"
+		;;
+
+		# Check condition 3
+		17)
+		echo "$text_3"
+		;;
+	esac
+
+	(( counter++ ))
+done
