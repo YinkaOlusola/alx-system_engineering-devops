@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# A bash script displaying a text and using if
+
+# Initiliaze counter
+counter=0
+
+# The word to dislay
+word="Best School"
+
+# Looping
+while [ "$counter" -lt 10 ]; do
+
+	# Display text
+	echo "$word"
+
+	# Conditional statement
+	if [ "$counter" -eq 8 ]
+	then
+		echo "Hi"
+	fi
+
+	(( counter++ ))
+done
