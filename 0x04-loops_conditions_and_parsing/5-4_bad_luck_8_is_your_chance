@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# A Bash script that loops from 1 to 10 and:
+#+ displays bad luck for the 4th loop iteration
+#+ displays good luck for the 8th loop iteration
+#+ isplays Best School for the other iterations
+
+# Initialize counter
+counter=0
+
+# Initalize texts to print
+word_1="Best School"
+word_2="bad luck"
+word_3="good luck"
+
+# The loop
+while [ "$counter" -lt 10 ]; do
+
+	# First condition
+	if [ "$counter" -eq 3 ];
+	then
+		echo "$word_2"
+
+	# Second condition
+	elif [ "$counter" -eq 7 ];
+	then
+		echo "$word_3"
+
+	# Other conditions
+	else
+		echo "$word_1"
+	fi
+
+	# Incrememnt counter
+	(( counter++ ))
+done
