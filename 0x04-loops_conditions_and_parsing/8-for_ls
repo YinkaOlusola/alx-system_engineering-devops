@@ -10,5 +10,5 @@
 FILES=$(ls)
 
 for file in $FILES; do
-	echo "$file"
+	echo "$file" | cut -d '-' -f2
 done
