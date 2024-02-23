@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # A Bash script that displays Best School 10 times using while loop.
 
+# Initialize counter
+i=0
+
 # Define the word to be displayed
 word="Best School"
 
@@ -11,5 +14,5 @@ while [ "$i" -lt 10 ]; do
 	echo "$word"
 
 	# Incrememnt counter
-	((i++))
+	(( i++ ))
 done
