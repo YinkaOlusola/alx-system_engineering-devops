@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Writing an infinity loop
+while true
+do
+	# Display Infinity and beyond
+	echo "To infinity and beyond"
+
+	# Putting it to a seconds sleep
+	sleep 2
+
+	# Handling SIGTERM
+	trap 'echo "I am invincible!!!"' SIGTERM
+done
+
+
